@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Elisyam - Dashboard (Dark Version)</title>
+        <title>CarWash | UPV</title>
         <meta name="description" content="Elisyam is a Web App and Admin Dashboard Template built with Bootstrap 4">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Google Fonts -->
@@ -73,23 +73,6 @@
                             </a>
                             <!-- End Toggle -->
                         </div>
-                        <!-- End Logo -->
-                        <!-- Begin Navbar Menu -->
-                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right">
-                            <!-- User -->
-                            <li class="nav-item dropdown"><a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><img src="views/assets/img/avatar/avatar-01.jpg" alt="..." class="avatar rounded-circle"></a>
-                                <ul aria-labelledby="user" class="user-size dropdown-menu">
-                                    <li class="welcome">
-                                        <a href="#" class="edit-profil"><i class="la la-gear"></i></a>
-                                        <img src="views/assets/img/avatar/avatar-01.jpg" alt="..." class="rounded-circle">
-                                    </li>
-                                   
-                                    <li><a rel="nofollow" href="Cerrar sesion" class="dropdown-item logout text-center"><i class="ti-power-off"></i></a></li>
-                                </ul>
-                            </li>
-                            <!-- End User -->
-                        </ul>
-                        <!-- End Navbar Menu -->
                     </div>
                     <!-- End Topbar -->
                 </nav>
@@ -129,31 +112,31 @@
                             <!-- Seccion del usuario -->
 
                             <li>
-                                <a href="components-widgets.html"><i class="la la-map"></i>
+                                <a href="#"><i class="la la-map"></i>
                                     <span>Como llegar</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="components-widgets.html"><i class="la la-clock-o"></i>
+                                <a href="#"><i class="la la-clock-o"></i>
                                     <span>Horario</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="components-widgets.html"><i class="la la-shield"></i>
+                                <a href="#"><i class="la la-shield"></i>
                                     <span>Actualizar Contrseña</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="components-widgets.html"><i class="la la-info"></i>
+                                <a href="#"><i class="la la-info"></i>
                                     <span>Acerca de</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="components-widgets.html"><i class="la la-sign-out"></i>
+                                <a href="#"><i class="la la-sign-out"></i>
                                     <span>Cerrar Sesión</span>
                                 </a>
                             </li>
@@ -175,7 +158,6 @@
                 </div>
                 <!-- End Content -->
             </div>
-            <!-- End Page Content -->
         </div>
 
         <!-- Begin Success Modal -->
