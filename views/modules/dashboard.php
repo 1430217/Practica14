@@ -25,7 +25,7 @@
                         <i class="ti-gift"></i>
                     </div>
                     <div class="media-body align-self-center">
-                       <div class="title"> <a href=""> Premios</a> </div>
+                       <div class="title"> <a href="index.php?action=premios"> Premios</a> </div>
                     </div>
                 </div>            
             </div>
@@ -40,7 +40,7 @@
                         <i class="meteocons-cloudy3"></i>
                     </div>
                     <div class="media-body align-self-center">
-                        <div class="title"> <a href="">Clima</a> </div>
+                        <div class="title"> <a href="index.php?action=clima">Clima</a> </div>
                     </div>
                 </div>
             </div>

@@ -2,8 +2,8 @@
 class EnlacesPagina{
 
     public function enlacesPaginasModel($enlaces){
-        if($enlaces == 'login' || $enlaces == 'registrar' || $enlaces == 'dashboard' || $enlaces == 'salir' || $enlaces == 'premios'
-            || $enlaces == 'addPremios' || $enlaces == 'promociones' || $enlaces == 'addPromociones'){
+        if($enlaces == 'login' || $enlaces == 'registro' || $enlaces == 'dashboard' || $enlaces == 'salir' || $enlaces == 'premios'
+            || $enlaces == 'addPremios' || $enlaces == 'promociones' || $enlaces == 'addPromociones' || $enlaces == 'clima'){
                 $module = 'views/modules/'.$enlaces.'.php';            
         }
 
