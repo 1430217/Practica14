@@ -35,7 +35,7 @@
                     }
                 } 
                 else 
-                    header('Location: index.php?action=login');
+                    echo '<script text/javascript> alert ("Hubo un error al inciar sesión"); </script>';
             }
         }
     

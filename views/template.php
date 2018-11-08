@@ -44,15 +44,8 @@
         <div class="page">
             <!-- Begin Header -->
             <header class="header">
-                <nav class="navbar fixed-top">         
-                    <!-- Begin Search Box-->
-                    <div class="search-box">
-                        <button class="dismiss"><i class="ion-close-round"></i></button>
-                        <form id="searchForm" action="#" role="search">
-                            <input type="search" placeholder="Search something ..." class="form-control">
-                        </form>
-                    </div>
-                    <!-- End Search Box-->
+                <nav class="navbar fixed-top"> 
+                          
                     <!-- Begin Topbar -->
                     <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
                         <!-- Begin Logo -->
@@ -87,7 +80,6 @@
                         <!-- Begin Main Navigation -->
                         
                         <ul class="list-unstyled">
-                        <span class="heading"><?= $_SESSION['usuario']?></span><br>
                             <span class="heading">Navegación</span>
 
                             <li class="active">
