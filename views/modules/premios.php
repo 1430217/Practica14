@@ -34,12 +34,19 @@
                                         <a href="">
                                             <button class="btn btn-gradient-01 mr-1 mb-2">Obtener</button>
                                         </a>
+
+                                        <a href="index.php?action=premios&idBorrar='.$r['idPremio'].'">
+                                            <button class="btn btn-gradient-01 mr-1 mb-2">Eliminar</button>
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>';
-                }?>
+                }
+                    $mvc->deletePremioController();
+                ?>
 
             </ul>
         </div>

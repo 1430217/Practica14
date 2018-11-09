@@ -3,6 +3,9 @@
 
     class Datos extends Conexion{
 
+        /**
+         * Funciones para agregar  
+        */
         // Función para registrar usuarios
         public function addUsuarios($usuario, $tabla){
             $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (nombre_usuario, username, correo, password) 
@@ -36,7 +39,6 @@
             $stmt->close();
         }
 
-
         //Funcion para el login
         public function loginModel($usuario, $tabla){
             $stmt = Conexion::conectar()->prepare("SELECT username, password FROM $tabla WHERE username = :username");
@@ -47,6 +49,9 @@
             $stmt->close();
         }
 
+        /**
+         * Funciones para traer datos 
+        */
 
         // Funcion para traer los registros de la tabla premios
         public function getPremios($tabla){
@@ -60,7 +65,21 @@
 
 
 
-
+        /**
+         * Funciones para eliminar 
+        */
+        // Funcion para eliminar premios
+        public function deletePremio($idPremio,$tabla){
+            $stmt = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE idPremio = :idPremio");
+            $stmt->bindParam(':idPremio', $idPremio, PDO::PARAM_INT);
+            $stmt->execute();
+            
+            if ($stmt->execute()) 
+                return 'success';
+            else 
+                return 'error';
+            $stmt->close();
+        }
 
 
 

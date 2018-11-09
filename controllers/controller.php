@@ -15,6 +15,9 @@
             include $respuesta;
         }
 
+        /**
+         * Funciones del controller para insertar registros 
+        */
         public function loginController(){
             if (isset($_POST['username'])) {
                 $usuario = array('username' => $_POST['username'],
@@ -75,11 +78,32 @@
             }
         }
 
+        /**
+         * Funciones del controller para mostrar los datos 
+        */
+
+        // Funcion para traer los premios
         public function getPremiosController(){
             $stmt = Datos::getPremios('premios');
             return $stmt;
         }
-    
+
+
+        /**
+         * Funciones para eliminar 
+        */
+        
+        // Funcion del controller para eliminar un premio
+        public function deletePremioController(){
+            if (isset($_GET['idBorrar'])){  
+
+                $stmt = Datos::deletePremio($_GET['idBorrar'], 'premios');
+                if($stmt == 'success')
+                    header('Location: index.php?action=premios');
+                else 
+                    echo '<script text/javascript> alert ("Error al eliminar la categoria"); </script>';
+            }
+        }
     }
 
 ?>
