@@ -1,5 +1,6 @@
 <?php 
     $mvc = new MvcController();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,68 +79,81 @@
                     <!-- Begin Side Navbar -->
                     <nav class="side-navbar box-scroll sidebar-scroll">
                         <!-- Begin Main Navigation -->
-                        
                         <ul class="list-unstyled">
-                            <span class="heading">Navegación</span>
+                            <?php if($_SESSION['usuario'] === 'admin'){ ?>
+                                <span class="heading">Navegación</span>
 
-                            <li class="active">
-                                <a href="index.php?action=dashboard"><i class="la la-dashboard"></i>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
+                                <li class="active">
+                                    <a href="index.php?action=dashboard"><i class="la la-dashboard"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
 
-                            <li class=""><a href="#dropdown-db" aria-expanded="false" data-toggle="collapse"><i class="la la-star-o"></i><span>Promociones</span></a>
-                                <ul id="dropdown-db" class="collapse list-unstyled pt-0">
-                                    <li><a href="#">Promociones</a></li>
-                                    <li><a href="#">Premios</a></li>    
-                                </ul>
-                            </li>
-                            
-                            <li><a href="#dropdown-Us" aria-expanded="false" data-toggle="collapse"><i class="la la-users"></i><span>Usuarios</span></a>
-                                <ul id="dropdown-Us" class="collapse list-unstyled pt-0">
-                                    <li><a href="#">Ver Usuarios</a></li>
-                                    <li><a href="#">Ver Solicitud</a></li>    
-                                </ul>
-                            </li>
+                                <li class=""><a href="#dropdown-P" aria-expanded="false" data-toggle="collapse"><i class="la la-star-o"></i><span>Premios</span></a>
+                                    <ul id="dropdown-P" class="collapse list-unstyled pt-0">
+                                        <li><a href="index.php?action=addPremios">Agregar Premios</a></li>
+                                        <li><a href="index.php?action=premios">Ver Premios</a></li>    
+                                    </ul>
+                                </li>
 
-                            <!-- Seccion del usuario -->
-                            <span class="heading">Navegación del usuario</span>
-                            <li class="active">
-                                <a href="index.php?action=dashboard"><i class="la la-dashboard"></i>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
+                                <li class=""><a href="#dropdown-PR" aria-expanded="false" data-toggle="collapse"><i class="la la-star-o"></i><span>Promociones</span></a>
+                                    <ul id="dropdown-PR" class="collapse list-unstyled pt-0">
+                                        <li><a href="#">Agregar Promociones</a></li>
+                                        <li><a href="index.php?action=premios">Ver Promociones</a></li>    
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#dropdown-Us" aria-expanded="false" data-toggle="collapse"><i class="la la-users"></i><span>Usuarios</span></a>
+                                    <ul id="dropdown-Us" class="collapse list-unstyled pt-0">
+                                        <li><a href="#">Ver Usuarios</a></li>
+                                        <li><a href="#">Ver Solicitud</a></li>    
+                                    </ul>
+                                </li>
 
-                            <li>
-                                <a href="#"><i class="la la-map"></i>
-                                    <span>Como llegar</span>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="index.php?action=salir"><i class="la la-sign-out"></i>
+                                        <span>Cerrar Sesión</span>
+                                    </a>
+                                </li>
+                            <?php }else{?>
 
-                            <li>
-                                <a href="#"><i class="la la-clock-o"></i>
-                                    <span>Horario</span>
-                                </a>
-                            </li>
+                                <span class="heading">Navegación del usuario</span>
+                                <li class="active">
+                                    <a href="index.php?action=dashboard"><i class="la la-dashboard"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="#"><i class="la la-shield"></i>
-                                    <span>Actualizar Contrseña</span>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="#"><i class="la la-map"></i>
+                                        <span>Como llegar</span>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="#"><i class="la la-info"></i>
-                                    <span>Acerca de</span>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="#"><i class="la la-clock-o"></i>
+                                        <span>Horario</span>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="index.php?action=salir"><i class="la la-sign-out"></i>
-                                    <span>Cerrar Sesión</span>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="#"><i class="la la-shield"></i>
+                                        <span>Actualizar Contrseña</span>
+                                    </a>
+                                </li>
 
+                                <li>
+                                    <a href="#"><i class="la la-info"></i>
+                                        <span>Acerca de</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="index.php?action=salir"><i class="la la-sign-out"></i>
+                                        <span>Cerrar Sesión</span>
+                                    </a>
+                                </li>
+                            <?php }?>
                         </ul>
                         <!-- End Main Navigation -->
                     </nav>

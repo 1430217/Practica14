@@ -28,7 +28,7 @@
                         <form method="POST">
                             
                             <div class="group material-input">
-							    <input type="text" name="nombre" required>
+							    <input type="text" name="nombre_usuario" required>
 							    <span class="highlight"></span>
 							    <span class="bar"></span>
 							    <label>Nombre</label>
@@ -71,3 +71,7 @@
             </div>
             <!-- End Row -->
         </div>
+<?php
+    $mvc = new MvcController();
+    $mvc->addUsuariosController();
+?>
