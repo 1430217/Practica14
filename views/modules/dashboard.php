@@ -62,7 +62,7 @@
             <div class="widget widget-12 has-shadow">
                 <div class="widget-body">
                     <div class="media">
-                        <div class="align-self-center ml-5 mr-5">
+                        <div class="align-self-center ml-5 mr-4">
                             <i class="ion ion-star"></i>
                         </div>
                         <div class="media-body align-self-center">
@@ -72,7 +72,17 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
     </div>
+
+
+
+
+
 <?php }?>
 
 

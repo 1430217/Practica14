@@ -31,15 +31,18 @@
 
                                 <div class="media-right align-self-center">
                                     <div class="actions">
+                                    
                                         <a href="">
                                             <button class="btn btn-gradient-01 mr-1 mb-2">Obtener</button>
-                                        </a>
+                                        </a>';
 
-                                        <a href="index.php?action=premios&idBorrar='.$r['idPremio'].'">
-                                            <button class="btn btn-gradient-01 mr-1 mb-2">Eliminar</button>
-                                        </a>
+                                        if($_SESSION['usuario'] === 'admin'){
+                                         echo '<a href="index.php?action=premios&idBorrar='.$r['idPremio'].'">
+                                                <button class="btn btn-gradient-01 mr-1 mb-2">Eliminar</button>
+                                                </a>';
+                                        } 
 
-                                    </div>
+                                    '</div>
                                 </div>
                             </div>
                         </div>

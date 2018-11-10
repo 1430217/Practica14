@@ -26,6 +26,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="views/assets/img/favicon-16x16.png">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="views/assets/vendors/css/base/bootstrap.min.css">
+        <link rel="stylesheet" href="views/assets/css/bootstrap-select/bootstrap-select.min.css">
         <link rel="stylesheet" href="views/assets/vendors/css/base/elisyam-1.5.min.css">
         <link rel="stylesheet" href="views/assets/css/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="views/assets/css/owl-carousel/owl.theme.min.css">
@@ -117,7 +118,7 @@
                                 </li>
                             <?php }else{?>
 
-                                <span class="heading">Navegación del usuario</span>
+                                <span class="heading">Navegación</span>
                                 <li class="active">
                                     <a href="index.php?action=dashboard"><i class="la la-dashboard"></i>
                                         <span>Dashboard</span>
@@ -178,6 +179,8 @@
         <!-- Begin Vendor Js -->
         <script src="views/assets/vendors/js/base/jquery.min.js"></script>
         <script src="views/assets/vendors/js/base/core.min.js"></script>
+        <script src="views/assets/vendors/js/bootstrap-select/bootstrap-select.min.js"></script>
+
         <!-- End Vendor Js -->
         <!-- Begin Page Vendor Js -->
         <script src="views/assets/vendors/js/nicescroll/nicescroll.min.js"></script>
